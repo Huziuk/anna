@@ -1,0 +1,486 @@
+/* Reset Styles */
+@import url(./reset.css);
+
+/* Fonts */
+@import url(./fonts.css);
+
+
+/* Header */
+@import url(./header.css);
+
+/* Footer */
+@import url(./footer.css);
+
+/* General Styles */
+:root {
+    --text-color: #494949;
+    --second-text-color: #fff;
+    --hover-text-color: #000;
+    --pink: #FFB5B5;
+    --yellow: #FFF7CA;
+    --green: #E4FFE3;
+    --label-color: #818181;
+    --font-family: "Montserrat";
+    --transition: all 150ms ease-in-out;
+}
+
+::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+::-moz-selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+.container {
+    width: 1045px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding-left: 27px;
+    position: relative;
+    font-size: 18px;
+    line-height: 115%;
+    color: #000;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    background: url(../svg/confirm.svg) center/cover no-repeat transparent;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.lines-1 {
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Quote */
+
+.quote {
+    padding: 66px 144px;
+    background-color: var(--yellow);
+    position: relative;
+    margin-bottom: 140px !important;
+}
+
+.quote__text {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    z-index: 10;
+}
+
+.quote::after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    background: url(../svg/ico-2.svg) center/90% no-repeat transparent;
+    top: 38px;
+    right: 208px;
+    z-index: 0;
+}
+
+
+/* Why */
+
+.why .title {
+    margin-bottom: 70px;
+}
+
+.why__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.why__img,
+.why__ul {
+    width: 50%;
+}
+
+.why__img {
+    background: url(../images/why.jpg) center/cover no-repeat transparent;
+    height: 495px;
+}
+
+.why__ul {
+    padding-left: 60px !important;
+}
+
+/* Сodex */
+
+.codex {
+    padding: 50px 50px 85px 110px;
+    position: relative;
+    background-color: var(--yellow);
+    margin-bottom: 200px !important;
+}
+
+.codex::after,
+.codex::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 70px;
+}
+
+.codex::after {
+    top: 85px;
+    right: 95px;
+    background: url(../svg/ico-3.svg) center/90% no-repeat transparent;
+}
+
+.codex::before {
+    background: url(../svg/ico-4.svg) center/90% no-repeat transparent;
+    left: 16px;
+    bottom: 20px;
+}
+
+.codex .title {
+    font-size: 26px;
+    margin-bottom: 55px;
+}
+
+.codex__ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.codex__ol div:first-child {
+    width: 380px;
+}
+
+.codex__ol div:last-child {
+    width: 420px;
+}
+
+.codex__ol li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 21.6px;
+    list-style: decimal;
+}
+
+
+/* Goals */
+
+.goal-title-text {
+    width: 810px;
+    margin: 25px auto 70px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 115px !important;
+    background-color: var(--green);
+}
+
+.goal__img {
+    margin: 0;
+    min-width: 455px;
+    height: 300px;
+    background: url(../images/goal-1.jpg) center/cover no-repeat transparent;
+}
+
+.goal-2 {
+    background: url(../images/goal-2.jpg) center/cover no-repeat transparent;
+}
+
+.goal-3 {
+    background: url(../images/goal-3.jpg) center/cover no-repeat transparent;
+}
+
+.goal-4 {
+    background: url(../images/goal-4.jpg) center/cover no-repeat transparent;
+}
+
+.goal-5 {
+    background: url(../images/goal-5.jpg) center/cover no-repeat transparent;
+}
+
+.goal__content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 80px;
+    margin: 0;
+}
+
+.goal__content-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.goal__content-text {
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    background-color: var(--pink);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    z-index: 10;
+}
+
+.button::before {
+    content: "Записатися";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--pink);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    z-index: 20;
+}
+
+.contact-form .button::before {
+    content: "Відправити";
+}
+
+.button:hover::after {
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    ul li {
+        padding-left: 20px;
+        font-size: 12px;
+    }
+
+    ul li::before {
+        width: 11px;
+        height: 9px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .quote {
+        display: none;
+    }
+
+    .why {
+        margin-bottom: 70px !important;
+    }
+
+    .why__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .why__img,
+    .why__ul {
+        width: 100%;
+    }
+
+    .why .title {
+        margin-bottom: 35px;
+    }
+
+    .why__ul {
+        padding-left: 20px !important;
+        margin-bottom: 55px !important;
+    }
+
+    .why__img {
+        height: 375px;
+    }
+
+    .codex {
+        margin-bottom: 70px !important;
+        padding: 25px 20px;
+    }
+
+    .codex .title {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+
+    .codex__ol {
+        flex-direction: column;
+        padding-left: 20px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .codex__ol li {
+        font-size: 14px;
+    }
+
+    .codex__ol div:first-child,
+    .codex__ol div:last-child {
+        width: 100%;
+    }
+
+    .codex::after {
+        top: 59px;
+        right: 17px;
+    }
+
+    .goal-title-text {
+        width: 100%;
+        margin: 20px auto 60px;
+        padding: 0px 15px;
+        font-size: 10px;
+    }
+
+    .goal {
+        flex-direction: column;
+        margin-bottom: 0 !important;
+    }
+
+    .goal:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .goal:last-child {
+        margin-bottom: 70px !important;
+    }
+
+    .goal__content {
+        height: auto;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .goal__content-text {
+        margin: 25px 0px 35px;
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    .goal__img {
+        min-width: 100%;
+        height: 270px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 0px 20px 20px;
+    }
+
+    .inputs-group {
+        flex-direction: column;
+    }
+
+    .inputs-group .input-wrapp {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .contact-info {
+        padding: 45px 20px 25px;
+        text-align: center;
+    }
+
+    .contact-info::after {
+        top: 45px;
+        left: 125px;
+    }
+
+    .contact-info__title {
+        margin-bottom: 50px;
+    }
+
+    .links {
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .contact-form__title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

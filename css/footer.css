@@ -1,0 +1,159 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.contact-info,
+.contact-form {
+    width: 50%;
+}
+
+.contact-info {
+    padding: 80px 60px;
+    position: relative;
+    background: linear-gradient(90deg, #FFB0B0 0%, #FFBDBD 99.95%);
+    color: #fff;
+}
+
+.contact-info::after{
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    top: 80px;
+    left: 105px;
+    background: url(../svg/ico-1.svg) center/95% no-repeat transparent;
+    z-index: 0;
+} 
+
+.contact-info ::selection {
+    background: #fff;
+    color: var(--pink);
+}
+
+.contact-info ::-moz-selection {
+    background: #fff;
+    color: var(--pink);
+}
+
+.contact-info__title {
+    margin-bottom: 70px;
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-info__text{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.links{
+    display: flex;
+    margin-top: 80px;
+}
+
+.links a {
+    margin-right: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.links a:hover{
+    transform: scale(1.1);
+}
+
+.contact-form{
+    padding-right: 95px;
+}
+
+.contact-form__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.input{
+    height: 35px;
+    padding: 0px 15px;
+    border: 2px solid var(--pink);
+    border-radius: 0px;
+    outline: none;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.input-wrapp{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapp label {
+    padding: 0px 5px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--label-color);
+    transition: all .2s ease-in-out;
+    cursor: text;
+}
+
+.input:focus + .input-label ,
+.input:not(:placeholder-shown) + .input-label {
+    color: var(--pink);
+    font-size: 12px;
+    top: 3%;
+    left: 10px;
+}
+
+.inputs-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs-group .input-wrapp{
+    width: 48%;
+}
+
+.textarea-wrapp{
+    position: relative;
+}
+
+.textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px 15px;
+    border: 2px solid var(--pink);
+    outline: none;
+    font-size: 14px;
+    color: var(--text-color);
+    resize: none;
+    border-radius: 0px;
+}
+
+.textarea-label{
+    padding: 0px 5px;
+    position: absolute;
+    background-color: #fff;
+    top: 8px;
+    left: 15px;
+    font-size: 14px;
+    color: var(--label-color);
+    transition: all .2s ease-in-out;
+    cursor: text;
+}
+
+.textarea:focus + .textarea-label ,
+.textarea:not(:placeholder-shown) + .textarea-label {
+    color: var(--pink);
+    font-size: 12px;
+    top: -9px;
+    left: 10px;
+}
+

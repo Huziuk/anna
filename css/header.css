@@ -1,0 +1,236 @@
+.header {
+    margin-bottom: 100px;
+    /* transform: translateY(-50px); */
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.header__nav-item {
+    margin-right: 60px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.header__nav-item:last-child {
+    margin-right: 0;
+}
+
+.header__nav-item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__nav-item.why-us::before {
+    background: url(../svg/why-us.svg) center/90% no-repeat transparent;
+}
+
+.header__nav-item.goals::before {
+    background: url(../svg/goals.svg) center/90% no-repeat transparent;
+}
+
+.header__nav-item.communication::before {
+    background: url(../svg/phone.svg) center/90% no-repeat transparent;
+}
+
+.header__nav-item a {
+    transition: var(--transition);
+}
+
+.header__nav-item a:hover {
+    color: var(--hover-text-color);
+}
+
+.logo-block{
+    margin-bottom: 125px;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.logo__title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.preview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px !important;
+}
+
+.preview__text ::selection {
+    background: #fff;
+    color: var(--pink);
+}
+
+.preview__text ::-moz-selection {
+    background: #fff;
+    color: var(--pink);
+}
+
+.preview__text,
+.preview__img {
+    width: 50%;
+    height: 495px;
+}
+
+.preview__img{
+    margin: 0;
+    background: url(../images/preview.jpg) center/cover no-repeat transparent;
+}
+
+.preview__text{
+    padding: 30px 35px;
+    background: linear-gradient(90deg, #FFC8C8 0%, #FFB0B0 99.95%);
+    color: var(--second-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview__text p {
+    font-size: 18px;
+    font-weight: 300;
+}
+.preview__title{
+    width: 100%;
+}
+.preview__title h1{
+    font-weight: 500;
+    position: relative;
+}
+.preview__title-top{
+    display: block;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.preview__title-bottom{
+    display: block;
+    position: relative;
+    margin-left: 75px;
+    font-size: 40px;
+    z-index: 10;
+}
+.preview__title h1::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    background: url(../svg/ico-1.svg) center/cover no-repeat transparent;
+    right: 50px;
+    top: 50px;
+    z-index: 0;
+}
+
+.preview_button{
+    position: relative;
+    color: var(--pink);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 40px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.preview_button::after{
+    content: "Записатися";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out;
+    color: #fff;
+    opacity: 0;
+}
+.preview_button::before{
+    content: "";
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: rgb(255 167 167);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+
+.preview_button:hover::before{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
+.preview_button:hover::after{
+    opacity: 1;
+}
+
+.word,
+.letter{
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .header {
+        margin-bottom: 50px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .logo__title {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .logo-block {
+        margin-bottom: 60px;
+    }
+    .preview {
+        flex-direction: column;
+        margin-bottom: 55px !important;
+    }
+    .preview__text,
+    .preview__img {
+         width: 100%;
+         height: 335px;
+    }
+    .preview__text p {
+        font-size: 13px;
+    }
+    .preview__text {
+        padding: 20px 27px;
+    }
+    .preview__title-top {
+        font-size: 26px;
+    }
+    .preview__title-bottom {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .preview__title h1::after {
+        width: 112px;
+        height: 49px;
+        top: 44px;
+    }
+    .preview_button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+}
