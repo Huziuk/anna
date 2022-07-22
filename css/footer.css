@@ -18,6 +18,7 @@
 }
 
 .contact-info::after{
+    /* display: none; */
     content: "";
     position: absolute;
     width: 145px;

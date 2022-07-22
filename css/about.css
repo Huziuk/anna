@@ -1,0 +1,45 @@
+.about-section.container {
+    width: 1460px;
+}
+
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px !important;
+    background-color: var(--green);
+    padding: 40px 20px;
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.about-section__text,
+.about__ul {
+    width: 48%;
+}
+
+.about-section__text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.about-section__text p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.about__ul li {
+    font-size: 16px;
+}
+.about__ul li::before {
+    width: 14px;
+    height: 11px;
+}
+
+.about-logo-block {
+    margin-bottom: 120px;
+}

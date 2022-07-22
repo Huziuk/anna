@@ -12,14 +12,16 @@
     <title>Маленька Анна</title>
 </head>
 
-<body>
+<body id="body">
+    <div id="top"></div>
     <!-- Header -->
     <header class="header">
         <nav class="header__nav">
             <ul>
-                <li class="header__nav-item why-us" data-aos="fade-down"><a href="#">Чому ми?</a></li>
-                <li class="header__nav-item goals" data-aos="fade-down"><a href="#">Наші цілі</a></li>
-                <li class="header__nav-item communication" data-aos="fade-down"><a href="#">Зв’язок з нами</a></li>
+                <li class="header__nav-item why-us" data-aos="fade-down"><a href="#why_us">Чому ми?</a></li>
+                <li class="header__nav-item about-us" data-aos="fade-down"><a href="#about">Про нас</a></li>
+                <li class="header__nav-item goal" data-aos="fade-down"><a href="#goals">Наші цілі</a></li>
+                <li class="header__nav-item communication" data-aos="fade-down"><a href="#communication">Зв’язок з нами</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +31,7 @@
 
         <!-- Logo -->
         <article class="logo-block" >
-            <img class="logo" src="./svg/logo.svg" alt="Logo" data-aos="fade-in">
-            <h2 class="logo__title">Маленька Анна</h2>
+            <a href="index.html"><img class="logo" src="./images/logo.png" alt="Logo" data-aos="fade-in"></a>
         </article>
 
         <!-- Preview -->
@@ -43,7 +44,7 @@
                         <span class="preview__title-bottom">“Маленька Анна”</span>
                     </h1>
                 </div>
-                <a href="" class="preview_button">Записатися</a>
+                <a href="#communication" class="preview_button">Записатися</a>
             </div>
             <div class="preview__img"></div>
         </article>
@@ -56,6 +57,7 @@
         </article>
 
         <article class="why container" data-aos="fade-in">
+            <div class="anchor" id="why_us"></div>
             <h2 class="title">Чому ми?</h2>
             <div class="why__wrapper">
                 <div class="why__img"></div>
@@ -73,6 +75,12 @@
                 </ul>
             </div>
         </article>
+
+        <p class="about-title-text" data-aos="fade-in">
+            Ми поважаємо кожного як особистість і навчаємо цього дітей.. <br> Повсякденне життя у дитячому просторі
+            “Маленька Анна” надає можливість виражати почуття, навчитися вирішувати конфлікти та отримати інший важливий
+            соціальний досвід (наприклад, ділитися з іншими дітьми, допомагати один одному).
+        </p>
 
         <article class="codex container" data-aos="zoom-in">
             <h2 class="title">Кодекс доброти “Маленької Анни”</h2>
@@ -94,83 +102,106 @@
             </ol>
         </article>
 
-        <!-- Goals -->
-        <h2 class="title" data-aos="fade-in">ЦІЛІ “Маленької Анни”</h2>
-        <p class="goal-title-text" data-aos="fade-in">
-            Ми поважаємо кожного як особистість і навчаємо цього дітей.. <br> Повсякденне життя у дитячому просторі
-            “Маленька Анна” надає можливість виражати почуття, навчитися вирішувати конфлікти та отримати інший важливий
-            соціальний досвід (наприклад, ділитися з іншими дітьми, допомагати один одному).
-        </p>
+        <!-- About -->
+        <div class="anchor" id="about"></div>
+        <h2 class="title about-title" data-aos="fade-in">Про нас</h2>
 
-        <article class="goal container" data-aos="fade-right">
-            <div class="goal__img goal-1"></div>
-            <div class="goal__content">
-                <h3 class="goal__content-title">Атмосфера</h3>
-                <p class="goal__content-text">
-                    Ми бажаємо створити мотивуюче, позитивне та дбайливе середовище, засноване на ефективному
-                    спілкуванні, взаємній довірі та повазі.
+        <article class="about container" data-aos="fade-right">
+            <div class="about__img about-1"></div>
+            <div class="about__content">
+                <h3 class="about__content-title">Безпека і здоров’я дітей</h3>
+                <p class="about__content-text">
+                    Безпека дітей = спокій батьків . Безпека у нашому дитячому просторі - пріоритет.
                 </p>
                 <div>
-                    <a href="" class="button">Записатися</a>
+                    <a href="about.html#security" class="button">Детальніше</a>
                 </div>
             </div>
         </article>
 
-        <article class="goal container" data-aos="fade-left">
-            <div class="goal__content">
-                <h3 class="goal__content-title">Досягнення</h3>
-                <p class="goal__content-text">
-                    Ми забезпечуємо цілісну навчальну програму, яка дозволить нашим дітям розвивати знання, досягати індивідуального успіху у сферах музики, мистецтва, танців, спорту,надаючи широкий спектр можливостей, що дозволяє дітям з різними інтересами сяяти.
+        <article class="about container" data-aos="fade-left">
+            <div class="about__content">
+                <h3 class="about__content-title">Комфорт дітей</h3>
+                <p class="about__content-text">
+                    Команда “Маленької Анни” докладає максимум зусиль, щоб створити рідну та домашню атмосферу для догляду за дітьми.
                 </p>
                 <div>
-                    <a href="" class="button">Записатися</a>
+                    <a href="about.html#comfort" class="button">Детальніше</a>
                 </div>
             </div>
-            <div class="goal__img goal-2"></div>
+            <div class="about__img about-2"></div>
         </article>
 
-        <article class="goal container" data-aos="fade-right">
-            <div class="goal__img goal-3"></div>
-            <div class="goal__content">
-                <h3 class="goal__content-title">Самостійність</h3>
-                <p class="goal__content-text">
+        <article class="about container" data-aos="fade-right">
+            <div class="about__img about-3"></div>
+            <div class="about__content">
+                <h3 class="about__content-title">Розвиток дитини</h3>
+                <p class="about__content-text">
+                    У нашому середовищі кожна дитина відкриє свою унікальність та розвиватиме сильні сторони своєї особистості , формуватиме емоційний інтелект та самостійність.
+                </p>
+                <div>
+                    <a href="about.html#development" class="button">Детальніше</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="about container" data-aos="fade-left">
+            <div class="about__content">
+                <h3 class="about__content-title">Власна програма</h3>
+                <p class="about__content-text">
+                    Матеріал подається мовою гри , тому що для нас дитячий простір “Маленька Анна” повинен бути не просто місцем, куди діти приходять , щоб їх наповнили інформацією, а місцем спілкування, дружби, пригод і відкриттів.
+                </p>
+                <div>
+                    <a href="about.html#program" class="button">Детальніше</a>
+                </div>
+            </div>
+            <div class="about__img about-4"></div>
+        </article>
+
+        <div class="anchor" id="goals"></div>
+        <h2 class="title about-title" data-aos="fade-in">ЦІЛІ “Маленької Анни”</h2>
+
+        <article class="goals container" data-aos="fade-in">
+            <div class="goals__item">
+                <h3 class="goals__title">Атмосфера</h3>
+                <p class="goals__text">
+                    Ми бажаємо створити мотивуюче, позитивне та дбайливе середовище, засноване на ефективному спілкуванні, взаємній довірі та повазі.
+                </p>
+            </div>
+            <div class="goals__item">
+                <h3 class="goals__title">Досягнення</h3>
+                <p class="goals__text">
+                    Ми забезпечуємо цілісну, збалансовану та різноманітну програму розвитку, яка дозволить нашим дітям розвивати знання та навички, досягати індивідуального успіху у сферах музики, мистецтва, танців, спорту та театру, надаючи широкий спектр можливостей, що дозволяє дітям з різними інтересами сяяти.
+                </p>
+            </div>
+            <div class="goals__item">
+                <h3 class="goals__title">Самостійність</h3>
+                <p class="goals__text">
                     Ми прагнемо створити середовище у якому кожен розвиває свої сильні сторони та вчиться керувати власним життям.
                 </p>
-                <div>
-                    <a href="" class="button">Записатися</a>
-                </div>
             </div>
-        </article>
-
-        <article class="goal container" data-aos="fade-left">
-            <div class="goal__content">
-                <h3 class="goal__content-title">Манери</h3>
-                <p class="goal__content-text">
+            <div class="goals__item">
+                <h3 class="goals__title">Манери</h3>
+                <p class="goals__text">
                     Ми усвідомлюємо важливість гарних манер та поваги до інших і віримо, що це дає змогу нашим дітям бути добре підготовленими до життя за межами нашого простору.
                 </p>
-                <div>
-                    <a href="" class="button">Записатися</a>
-                </div>
             </div>
-            <div class="goal__img goal-4"></div>
+            <div class="goals__item">
+                <h3 class="goals__title">Здорові межі</h3>
+                <p class="goals__text">
+                    Ми віримо, що діти процвітають, коли мають чіткі межі. Безпечне та впорядковане середовище з послідовними щоденними ритмами має важливе значення для розвитку.
+                </p>
+            </div>
+            <div>
+                <a href="#communication" class="button">Записатися</a>
+            </div>
         </article>
 
-        <article class="goal container" data-aos="fade-right">
-            <div class="goal__img goal-5"></div>
-            <div class="goal__content">
-                <h3 class="goal__content-title">Здорові межі</h3>
-                <p class="goal__content-text">
-                    Ми віримо , що діти процвітають , коли мають чіткі межі . Безпечне та впорядковане середовище з послідовними щоденними ритмами має важливе значення для розвитку.
-                </p>
-                <div>
-                    <a href="" class="button">Записатися</a>
-                </div>
-            </div>
-        </article>
     </main>
 
     <!-- Footer -->
     <footer class="footer container">
+        <div class="anchor" id="communication"></div>
         <form action="" class="contact-form" data-aos="fade-right">
             <h3 class="contact-form__title">Зв'яжіться з нами</h3>
             <div class="inputs-group">
@@ -202,6 +233,7 @@
             </div>
         </form>
         <div class="contact-info" data-aos="fade-left">
+            <!-- <img src="./svg/logo.svg"  class="contact-info__title" alt="Маленька Анна" width="100px"> -->
             <h3 class="contact-info__title">Маленька Анна</h3>
             <div>
                 <p class="contact-info__text">Залізнична 13а , ЖК “Веселка”</p>
@@ -215,6 +247,8 @@
             </div>
         </div>
     </footer>
+
+    <a href="#top" class="button-top"></a>
 
     <img src="./svg/lines-1.svg" class="lines-1">
 

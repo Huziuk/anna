@@ -11,6 +11,9 @@
 /* Footer */
 @import url(./footer.css);
 
+/* About */
+@import url(./about.css);
+
 /* General Styles */
 :root {
     --text-color: #494949;
@@ -34,12 +37,17 @@
     color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 1045px;
     margin: 0 auto;
 }
 
 body {
+    padding-top: 200px;
     font-family: var(--font-family);
     color: var(--text-color);
 }
@@ -88,6 +96,35 @@ ul li::before {
     z-index: -1;
 }
 
+.anchor{
+    transform: translateY(-100px);
+}
+
+.button-top {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../svg/arrow.svg) center/35% no-repeat var(--pink);
+    transition: all .2s ease-in-out;
+    opacity: 0;
+}
+.button-top.active{
+    opacity: 1;
+}
+.button-top:hover{
+    opacity: .8;
+}
+
+
+#top {
+    position: absolute;
+    top: 0;
+}
+
 /* Quote */
 
 .quote {
@@ -128,7 +165,6 @@ ul li::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 140px;
 }
 
 .why__img,
@@ -200,16 +236,20 @@ ul li::before {
 }
 
 
-/* Goals */
+/* Abouts */
 
-.goal-title-text {
+.about-title-text {
     width: 810px;
-    margin: 25px auto 70px;
+    margin: 70px auto 140px;
     font-size: 18px;
     text-align: center;
 }
 
-.goal {
+.about-title{
+    margin-bottom: 70px;
+}
+
+.about {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,30 +257,30 @@ ul li::before {
     background-color: var(--green);
 }
 
-.goal__img {
+.about__img {
     margin: 0;
     min-width: 455px;
     height: 300px;
-    background: url(../images/goal-1.jpg) center/cover no-repeat transparent;
+    background: url(../images/about-1.jpg) center/cover no-repeat transparent;
 }
 
-.goal-2 {
-    background: url(../images/goal-2.jpg) center/cover no-repeat transparent;
+.about-2 {
+    background: url(../images/about-2.jpg) center/cover no-repeat transparent;
 }
 
-.goal-3 {
-    background: url(../images/goal-3.jpg) center/cover no-repeat transparent;
+.about-3 {
+    background: url(../images/about-3.jpg) center/cover no-repeat transparent;
 }
 
-.goal-4 {
-    background: url(../images/goal-4.jpg) center/cover no-repeat transparent;
+.about-4 {
+    background: url(../images/about-4.jpg) center/cover no-repeat transparent;
 }
 
-.goal-5 {
-    background: url(../images/goal-5.jpg) center/cover no-repeat transparent;
+.about-5 {
+    background: url(../images/about-5.jpg) center/cover no-repeat transparent;
 }
 
-.goal__content {
+.about__content {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -249,13 +289,13 @@ ul li::before {
     margin: 0;
 }
 
-.goal__content-title {
+.about__content-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
 }
 
-.goal__content-text {
+.about__content-text {
     font-size: 16px;
     line-height: 19.5px;
 }
@@ -313,6 +353,24 @@ ul li::before {
 .button:hover::before {
     opacity: 1;
 }
+
+
+.goals {
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 50px 115px;
+    margin-bottom: 170px !important;
+}
+.goals__item{
+    margin-bottom: 45px;
+}
+
+.goals__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 
 
 @media (max-width: 600px) {
@@ -395,33 +453,33 @@ ul li::before {
         right: 17px;
     }
 
-    .goal-title-text {
+    .about-title-text {
         width: 100%;
         margin: 20px auto 60px;
         padding: 0px 15px;
         font-size: 10px;
     }
 
-    .goal {
+    .about {
         flex-direction: column;
         margin-bottom: 0 !important;
     }
 
-    .goal:nth-child(even) {
+    .about:nth-child(even) {
         flex-direction: column-reverse;
     }
 
-    .goal:last-child {
+    .about:last-child {
         margin-bottom: 70px !important;
     }
 
-    .goal__content {
+    .about__content {
         height: auto;
         padding: 25px 20px;
         text-align: center;
     }
 
-    .goal__content-text {
+    .about__content-text {
         margin: 25px 0px 35px;
         font-size: 12px;
     }
@@ -430,7 +488,7 @@ ul li::before {
         font-size: 10px;
     }
 
-    .goal__img {
+    .about__img {
         min-width: 100%;
         height: 270px;
     }
