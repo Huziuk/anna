@@ -559,4 +559,7 @@ ul li::before {
     .button-top{
         display: none;
     }
+    .anchor {
+        transform: translateY(-40px);
+    }
 }
