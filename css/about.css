@@ -43,3 +43,35 @@
 .about-logo-block {
     margin-bottom: 120px;
 }
+
+@media (max-width: 600px) {
+    .about-logo-block {
+        margin-bottom: 50px;
+    }
+    .about-section {
+        flex-direction: column;
+        margin-bottom: 0 !important;
+    }
+    .about-section.container {
+        width: 100%;
+    }
+    .about-section__text,
+    .about__ul {
+        width: 100%;
+    }
+    .about-section__text h2 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .about-section__text p {
+        margin-bottom: 45px;
+        font-size: 14px;
+        padding: 0;
+    }
+    .about__ul li {
+        font-size: 12px;
+    }
+    .about-footer {
+        margin-top: 50px !important;
+    }
+}

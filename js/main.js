@@ -1,3 +1,9 @@
+if (window.innerWidth <= 600) {
+  const elements = document.querySelectorAll('[data-aos');
+  Array.from(elements).forEach(element => {
+    element.setAttribute('data-aos', "fade-in")
+  })
+}
 AOS.init({
   // Global settings:
   disable: "false", // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -33,12 +39,7 @@ Array.from(headerNavItem).forEach((element, index) => {
   element.setAttribute("data-aos-delay", index + "00");
 });
 
-if (window.innerWidth <= 600) {
-  const elements = document.querySelectorAll('[data-aos');
-  Array.from(elements).forEach(element => {
-    element.setAttribute('data-aos', "fade-in")
-  })
-}
+
 
 const html = document.getElementsByTagName("html")[0]
 const header = document.querySelector(".header")
