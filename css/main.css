@@ -327,7 +327,7 @@ ul li::before {
 }
 
 .button::before {
-    content: "Записатися";
+    content: "Детальніше";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -338,6 +338,10 @@ ul li::before {
     transition: all .3s ease-in-out;
     opacity: 0;
     z-index: 20;
+}
+.preview .button::before,
+.goals .button::before {
+    content: "Записатися";
 }
 
 .contact-form .button::before {
