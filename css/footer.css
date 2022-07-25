@@ -58,6 +58,10 @@
     margin-top: 80px;
 }
 
+.links img {
+    width: 30px;
+}
+
 .links a {
     margin-right: 8px;
     transition: all .2s ease-in-out;
